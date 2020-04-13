@@ -3,6 +3,7 @@
 pub mod iclass_factory;
 pub mod iunknown;
 
+#[cfg(all(windows, feature = "runtime"))]
 #[doc(inline)]
 pub use iclass_factory::IClassFactory;
 #[doc(inline)]

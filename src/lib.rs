@@ -20,8 +20,10 @@ pub mod interfaces;
 pub mod offset;
 mod ptr;
 mod rc;
+#[cfg(all(windows, feature = "runtime"))]
 #[doc(hidden)]
 pub mod registration;
+#[cfg(all(windows, feature = "runtime"))]
 pub mod runtime;
 pub mod sys;
 

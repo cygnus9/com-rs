@@ -12,6 +12,10 @@ keywords = ["windows", "ffi", "com"]
 license = "MIT"
 readme = "./README.md"
 
+[features]
+default = ["runtime"]
+runtime = []
+
 [dependencies]
 com_macros = { version = "0.2", path = "macros" }
 
